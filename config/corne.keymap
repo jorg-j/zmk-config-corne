@@ -72,16 +72,16 @@
 &kp TAB    &kp EXCL   &kp AT          &kp HASH          &kp DLLR           &kp PRCNT         &kp CARET   &kp AMPS   &kp ASTERISK   &kp LPAR  &kp RPAR  &trans
 &kp LCTRL  &kp PLUS   &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F5            &kp MINUS   &kp EQUAL  &kp LBKT       &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LSHFT  &kp MINUS  &kp UNDERSCORE  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL         &kp UNDER   &kp PLUS   &kp LBRC       &kp RBRC  &kp PIPE  &kp TILDE
-                                      &kp LGUI          &trans             &mt RALT SPACE    &kp ESCAPE  &kp GRAVE  &kp BACKSPACE
+                                      &none             &trans             &mt RALT SPACE    &kp ESCAPE  &kp GRAVE  &kp BACKSPACE
             >;
         };
 
         system {
             bindings = <
-&none       &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none  &none  &none
-&none       &none         &none         &none         &none         &none           &none  &none  &none  &none  &none  &none
-                                        &to 0         &none         &none           &none  &none  &none
+&none       &none         &none         &none         &none         &none           &none           &none           &none         &none      &none  &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
+&none       &none         &none         &none         &none         &none           &none           &none           &none         &none      &none  &none
+                                        &none         &none         &to 0           &to 0           &none           &none
             >;
         };
     };
