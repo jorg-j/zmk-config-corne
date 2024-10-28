@@ -39,10 +39,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E  &kp R  &kp T            &kp Y      &kp U    &kp I        &kp O    &kp P     &kp LEFT_GUI
-&sk LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F  &kp G            &kp H      &kp J    &kp K        &kp L    &kp SEMI  &kp SQT
-&mt LCTRL LPAR  &kp Z  &kp X  &kp C  &kp V  &kp B            &kp N      &kp M    &kp COMMA    &kp DOT  &kp FSLH  &mt ESCAPE RIGHT_PARENTHESIS
-                              &sl 2  &to 1  &kp BACKSPACE    &kp SPACE  &kp RET  &key_repeat
+&kp TAB         &kp Q  &kp W  &kp E  &kp R  &kp T            &kp Y      &kp U    &kp I      &kp O    &kp P     &kp LEFT_GUI
+&sk LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F  &kp G            &kp H      &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
+&mt LCTRL LPAR  &kp Z  &kp X  &kp C  &kp V  &kp B            &kp N      &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mt ESCAPE RIGHT_PARENTHESIS
+                              &sl 2  &to 1  &kp BACKSPACE    &kp SPACE  &kp RET  &to 0
             >;
         };
 
@@ -54,10 +54,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&sk LEFT_COMMAND  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT       &kp CARET       &kp AMPERSAND   &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&sk LEFT_SHIFT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6    &kp N7          &kp N8         &kp N9                &kp NUMBER_0           &trans
-&sk LCTRL         &kp LC(A)     &trans        &trans        &kp LC(V)     &kp LC(C)         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT             &trans                 &kp CAPS
-                                              &tog 3        &trans        &mt RALT SPACE    &to 0           &kp RET         &kp BACKSPACE
+&sk LEFT_COMMAND  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT       &kp CARET       &kp AMPERSAND   &kp ASTRK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&sk LEFT_SHIFT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6    &kp N7          &kp N8        &kp N9                &kp NUMBER_0           &trans
+&sk LCTRL         &kp LC(A)     &trans        &trans        &kp LC(V)     &kp LC(C)         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT             &trans                 &kp CAPS
+                                              &tog 3        &trans        &mt RALT SPACE    &to 0           &kp RET         &to 0
             >;
         };
 
@@ -69,10 +69,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB         &kp F1     &kp F2          &kp F3          &kp F4           &kp F5              &kp F6             &kp F7     &kp F8         &kp F9    &kp MINUS  &kp EQUAL
-&sk LEFT_SHIFT  &kp F10    &kp F11         &kp F12         &none            &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp EQUAL  &kp LBKT       &kp RBKT  &kp BSLH   &kp GRAVE
-&sk LEFT_ALT    &kp MINUS  &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp PLUS   &kp LBRC       &kp RBRC  &kp PIPE   &kp TILDE
-                                           &none           &trans           &mt RALT SPACE      &to 0              &kp GRAVE  &kp BACKSPACE
+&kp TAB         &kp F1     &kp F2          &kp F3          &kp F4           &kp F5              &kp F6             &kp F7     &kp F8    &kp F9    &kp MINUS  &kp EQUAL
+&sk LEFT_SHIFT  &kp F10    &kp F11         &kp F12         &none            &kp LEFT_BRACKET    &kp RIGHT_BRACKET  &kp UNDER  &kp LBKT  &kp RBKT  &kp BSLH   &kp GRAVE
+&sk LEFT_ALT    &kp MINUS  &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACE      &kp RIGHT_BRACE    &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE   &kp TILDE
+                                           &none           &trans           &mt RALT SPACE      &to 0              &kp GRAVE  &to 0
             >;
         };
 
@@ -81,7 +81,7 @@
 &none       &none         &none         &none         &none           &none           &none           &none           &none         &none      &none  &none
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
 &none       &none         &none         &none         &none           &none           &none           &none           &none         &none      &none  &soft_off
-                                        &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL       &to 0           &none           &none
+                                        &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL       &to 0           &none           &to 0
             >;
         };
     };
