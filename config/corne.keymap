@@ -10,7 +10,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        arrows {
+            bindings = <&to 3>;
+            key-positions = <18 19 20 21>;
+            layers = <0>;
+        };
+    };
 
     macros {
         brackets: brackets {
@@ -32,6 +40,13 @@
             #binding-cells = <0>;
             bindings = <&kp BACKSPACE &to 0>;
             label = "BACKSPACE_LAYER0";
+        };
+
+        space_layer0: space_layer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &to 0>;
+            label = "SPACE_LAYER0";
         };
     };
 
@@ -64,7 +79,7 @@
 &sk LEFT_COMMAND  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT          &kp CARET       &kp AMPERSAND   &kp ASTRK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
 &sk LEFT_SHIFT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5         &kp NUMBER_6    &kp N7          &kp N8        &kp N9                &kp NUMBER_0           &trans
 &sk LCTRL         &kp LC(Z)     &trans        &kp LC(C)     &kp LC(V)     &none                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT             &trans                 &kp CAPS
-                                              &tog 3        &trans        &backspace_layer0    &to 0           &kp RET         &to 0
+                                              &tog 3        &trans        &backspace_layer0    &space_layer0   &kp RET         &to 0
             >;
         };
 
@@ -79,7 +94,7 @@
 &kp TAB         &kp F1     &kp F2          &kp F3        &kp F4   &kp F5               &kp F6             &kp F7     &kp F8    &kp F9    &kp MINUS  &kp EQUAL
 &sk LEFT_SHIFT  &kp F10    &kp F11         &kp F12       &none    &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &kp UNDER  &kp LBKT  &kp RBKT  &kp BSLH   &kp GRAVE
 &sk LCTRL       &kp MINUS  &kp UNDERSCORE  &kp HOME      &kp END  &kp LEFT_BRACE       &kp RIGHT_BRACE    &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE   &kp TILDE
-                                           &kp LEFT_ALT  &trans   &backspace_layer0    &to 0              &kp GRAVE  &to 0
+                                           &kp LEFT_ALT  &trans   &backspace_layer0    &space_layer0      &kp GRAVE  &to 0
             >;
         };
 
@@ -88,7 +103,7 @@
 &none       &none         &none         &none         &none           &none           &none           &none           &none         &none      &none  &none
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none  &none
 &none       &none         &none         &none         &none           &none           &none           &none           &none         &none      &none  &soft_off
-                                        &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL       &to 0           &none           &to 0
+                                        &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LCTRL       &space_layer0   &kp ENTER       &to 0
             >;
         };
     };
