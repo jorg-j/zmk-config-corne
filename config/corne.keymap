@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 
 / {
     combos {
@@ -76,10 +75,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&sk LEFT_COMMAND  &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT          &kp CARET       &kp AMPERSAND   &kp ASTRK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-&sk LEFT_SHIFT    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5         &kp NUMBER_6    &kp N7          &kp N8        &kp N9                &kp NUMBER_0           &trans
-&sk LCTRL         &kp LC(Z)     &trans        &kp LC(C)     &kp LC(V)     &none                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT             &trans                 &kp CAPS
-                                              &tog 3        &trans        &backspace_layer0    &space_layer0   &kp RET         &to 0
+&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5               &kp NUMBER_6    &kp N7        &kp N8            &kp N9             &kp N0                &kp MINUS
+&sk LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5         &kp NUMBER_6    &kp N7        &kp N8            &kp N9             &kp NUMBER_0          &kp RIGHT_SHIFT
+&sk LCTRL       &kp HOME      &kp END       &kp LC(C)     &kp LEFT      &kp RIGHT            &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp LCTRL
+                                            &tog 3        &to 0         &backspace_layer0    &space_layer0   &kp RET       &to 0
             >;
         };
 
@@ -93,7 +92,7 @@
             bindings = <
 &kp TAB         &kp F1     &kp F2          &kp F3        &kp F4   &kp F5               &kp F6             &kp F7     &kp F8    &kp F9    &kp MINUS  &kp EQUAL
 &sk LEFT_SHIFT  &kp F10    &kp F11         &kp F12       &none    &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &kp UNDER  &kp LBKT  &kp RBKT  &kp BSLH   &kp GRAVE
-&sk LCTRL       &kp MINUS  &kp UNDERSCORE  &kp HOME      &kp END  &kp LEFT_BRACE       &kp RIGHT_BRACE    &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE   &kp TILDE
+&sk LCTRL       &kp GRAVE  &kp UNDERSCORE  &kp HOME      &kp END  &kp LEFT_BRACE       &kp RIGHT_BRACE    &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE   &kp TILDE
                                            &kp LEFT_ALT  &trans   &backspace_layer0    &space_layer0      &kp GRAVE  &to 0
             >;
         };
