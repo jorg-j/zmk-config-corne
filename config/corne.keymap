@@ -61,7 +61,7 @@
 
             bindings = <
 &kp TAB         &kp Q  &kp W  &kp E  &kp R  &kp T            &kp Y      &kp U    &kp I      &kp O    &kp P     &kp LEFT_GUI
-&sk LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F  &kp G            &kp H      &kp J    &kp K      &kp L    &kp SEMI  &mt SQT LEFT_ALT
+&sk LEFT_SHIFT  &kp A  &kp S  &kp D  &kp F  &kp G            &kp H      &kp J    &kp K      &kp L    &kp SEMI  &mt LEFT_ALT APOS
 &mt LCTRL LPAR  &kp Z  &kp X  &kp C  &kp V  &kp B            &kp N      &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mt ESCAPE RIGHT_PARENTHESIS
                               &sl 2  &to 1  &kp BACKSPACE    &kp SPACE  &kp RET  &to 0
             >;
@@ -75,9 +75,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5               &kp NUMBER_6    &kp N7        &kp N8            &kp N9             &kp N0                &kp MINUS
-&sk LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5         &kp NUMBER_6    &kp N7        &kp N8            &kp N9             &kp NUMBER_0          &kp RIGHT_SHIFT
-&sk LCTRL       &kp HOME      &kp END       &kp LC(C)     &kp LEFT      &kp RIGHT            &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp NON_US_BACKSLASH  &kp LCTRL
+&kp EQUAL       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5               &kp NUMBER_6    &kp N7        &kp N8            &kp N9             &kp N0            &kp MINUS
+&sk LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5         &kp LEFT        &kp DOWN      &kp UP_ARROW      &kp RIGHT          &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&sk LCTRL       &kp HOME      &kp END       &kp LC(C)     &kp LEFT      &kp RIGHT            &kp DOWN_ARROW  &kp UP_ARROW  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN     &kp GREATER_THAN
                                             &tog 3        &to 0         &backspace_layer0    &space_layer0   &kp RET       &to 0
             >;
         };
